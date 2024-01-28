@@ -9,12 +9,16 @@ body {
 	overflow: hidden;
 }
 
-.left {
-	float: left;
-}
-
 .right {
 	float: right;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.left {
+	float: right;
+    text-align: right;
+    padding-right: 40px;
 }
 
 .section-wrap {
@@ -143,8 +147,9 @@ body {
 
 		a:hover,
 		&.hover a {
-			color: $bd-contact;
+			
 			// color: #c0392b;
+			color: $bd-projects;
 		}
 	}
 
@@ -171,7 +176,7 @@ body {
 		a:hover,
 		&.hover a {
 			// color: #27ae60;
-			color: $bd-projects;
+			color: $bd-contact;
 		}
 	}
 
@@ -422,7 +427,7 @@ body {
 
 .works-content {
 	h1 {
-		text-align: center;
+		text-align: left;
 		color: #fff;
 	}
 
@@ -540,16 +545,7 @@ body {
 	background: $bd-projects;
 	color: #dadada;
 
-	// @include link(#fff,#dadada);
 	.projects-content {
-		.left {
-			width: 40%
-		}
-
-		.right {
-			width: 50%;
-		}
-
 		h1 {
 			color: #fff;
 			margin-bottom: 30px;
@@ -559,21 +555,15 @@ body {
 			margin-top: 20px;
 		}
 
-		h2 {
-			color: #fff;
+		h3 {
 			margin-bottom: 20px;
-		}
 
-		.right ul {
-			list-style-type: square;
-			padding-left: 30px;
-			margin-bottom: 20px;
-			line-height: 1.6;
 		}
 	}
 
 	.projects-ways li {
 		line-height: 1.8;
+		font-size: normal;
 	}
 }
 
@@ -606,7 +596,7 @@ body {
 
 		.right ul {
 			list-style-type: square;
-			padding-left: 30px;
+			// padding-left: 30px;
 			margin-bottom: 20px;
 			line-height: 1.6;
 		}
@@ -633,6 +623,7 @@ body {
 		h1 {
 			color: #fff;
 			margin-bottom: 30px;
+			text-align: center;
 		}
 
 		.coursis-info {
