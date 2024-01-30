@@ -11,14 +11,14 @@ body {
 
 .right {
 	float: right;
-    text-align: left;
-    padding-left: 30px;
+	text-align: left;
+	padding-left: 30px;
 }
 
 .left {
 	float: right;
-    text-align: right;
-    padding-right: 40px;
+	text-align: right;
+	padding-right: 40px;
 }
 
 .section-wrap {
@@ -147,7 +147,7 @@ body {
 
 		a:hover,
 		&.hover a {
-			
+
 			// color: #c0392b;
 			color: $bd-projects;
 		}
@@ -517,17 +517,42 @@ body {
 }
 
 .skill-content {
+	margin-top: 200px !important;
+	padding-right: 0;
+
 	h1 {
 		color: #fff;
 	}
 
-	ul {
+	h2 {
 		color: #fff;
 	}
 
-	li {
-		font-size: 18px;
-		line-height: 2;
+	.left {
+		text-align: center;
+		padding-right: 0;
+
+		li {
+			display: inline-flex;
+			list-style: none;
+			flex-wrap: wrap;
+		}
+
+		width: 50%;
+		float: left;
+	}
+
+	.right {
+		padding-left: 0;
+		text-align: center;
+		width: 50%;
+		float: right;
+
+		li {
+			display: inline-flex;
+			list-style: none;
+			flex-wrap: wrap;
+		}
 	}
 
 	.cfade {
@@ -539,6 +564,66 @@ body {
 			left: 0;
 		}
 	}
+
+}
+
+
+.skill {
+	position: relative;
+	border-radius: 50%;
+	padding: 15px;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.large-skill {
+	width: 175px;
+	height: 175px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.skill:hover .tooltip {
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.skill:hover span,
+.skill:hover .tooltip {
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.skill:hover,
+.skill:hover .tooltip,
+.skill:hover .tooltip::before {
+	color: #ffffff;
+	background-color: #123239;
+}
+
+.skill .tooltip {
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	background: #ffffff;
+	color: #ffffff;
+	padding: 5px 8px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .section-projects {
@@ -612,34 +697,11 @@ body {
 	color: #dadada;
 
 	.coursis-content {
-		.left {
-			width: 40%
-		}
-
-		.right {
-			width: 50%;
-		}
 
 		h1 {
 			color: #fff;
 			margin-bottom: 30px;
 			text-align: center;
-		}
-
-		.coursis-info {
-			margin-top: 20px;
-		}
-
-		h2 {
-			color: #fff;
-			margin-bottom: 20px;
-		}
-
-		.right ul {
-			list-style-type: square;
-			padding-left: 30px;
-			margin-bottom: 20px;
-			line-height: 1.6;
 		}
 	}
 
@@ -659,7 +721,7 @@ body {
 }
 
 .modal-backdrop {
-	z-index: -1 ;
+	z-index: -1;
 }
 
 .modal-body {
@@ -672,4 +734,5 @@ body {
 
 	}
 }
+
 /*efooter*/
