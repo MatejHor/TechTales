@@ -736,7 +736,7 @@
 		<div class="section">
 			<div class="skill-content section-content">
 				<div class="left">
-					<h1>My best skills</h1>
+					<h1>My recents skills</h1>
 					<ul>
 						<li class="skill cfade cfade1">
 							<span class="tooltip">Python</span>
@@ -745,7 +745,7 @@
 						</li>
 						<li class="skill cfade cfade2">
 							<span class="tooltip">Bash</span>
-							<img width="48" height="48" src="https://img.icons8.com/color/48/bash.png" alt="bash"/>
+							<img width="48" height="48" src="https://img.icons8.com/color/48/bash.png" alt="bash" />
 						</li>
 						<li class="skill cfade cfade3">
 							<span class="tooltip">Java</span>
@@ -758,9 +758,8 @@
 							<img width="48" height="48" src="https://img.icons8.com/arcade/64/sql.png" alt="sql-logo" />
 						</li>
 						<li class="skill cfade cfade5">
-							<span class="tooltip">Reddis</span>
-							<img width="48" height="48" src="https://img.icons8.com/color/48/redis--v1.png"
-								alt="redis--v1" />
+							<span class="tooltip">Databricks</span>
+							<img width="48" height="48" src="./images/databricks.png" alt="Databricks" />
 						</li>
 						<li class="skill cfade cfade6">
 							<span class="tooltip">AWS</span>
@@ -773,143 +772,70 @@
 								alt="google-cloud" />
 						</li>
 						<li class="skill cfade cfade8">
-							<span class="tooltip">Linux/UNIX</span>
+							<span class="tooltip">Kali Linux</span>
 							<img width="48" height="48" src="https://img.icons8.com/color/48/kali-linux.png"
 								alt="kali-linux" />
+						</li>
+						<li class="skill cfade cfade8">
+							<span class="tooltip">Apache Spark</span>
+							<img width="48" height="48" src="./images/spark.png" alt="spark" />
 						</li>
 					</ul>
 				</div>
 				<div class="right">
 					<h1>Other skills</h1>
-					<ul>
-						<li class="large-skill skill cfade cfade1">
-							Programming Languagues
-							<div class="tooltip">
-								<ul class="tooltip-list">
-									<li>Python</li>
-									<li>C</li>
-									<li>C++</li>
-									<li>C#</li>
-									<li>Java</li>
-									<li>JavaScript</li>
-									<li>Ruby</li>
-									<li>PHP</li>
-									<li>Bash</li>
-									<li>Groovy</li>
-								</ul>
+					<div x-data="{ activeTab: 1 }">
+						<!-- Buttons -->
+						<div class="flex justify-center">
+							<div role="tablist"
+								class="max-[480px]:max-w-[180px] inline-flex flex-wrap justify-center  rounded-[20px] p-1 mb-8 min-[480px]:mb-12"
+								@keydown.right.prevent.stop="$focus.wrap().next()" @keydown.left.prevent.stop="$focus.wrap().prev()"
+								@keydown.home.prevent.stop="$focus.first()" @keydown.end.prevent.stop="$focus.last()">
+								<button id="tab-9"
+									class=" text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+									:class="activeTab === 9 ? 'bg-[#123239] text-white' : 'text-white'" :tabindex="activeTab === 9 ? 0 : -1"
+									:aria-selected="activeTab === 9" aria-controls="tabpanel-9" @click="activeTab = 9"
+									@focus="activeTab = 9">
+									Programming Languagues
+								</button>
 							</div>
-						</li>
-						<li class="large-skill skill cfade cfade2">
-							Databases
-							<span class="tooltip">
-								<ul>
-									<li>PostgresSQL</li>
-									<li>Microsoft Server SQL</li>
-									<li>Oracle Database</li>
-									<li>MySQL</li>
-									<li>SQLite</li>
-									<li>ORM</li>
-									<li>Redis</li>
-									<li>MongoDB</li>
-									<li>Neo4j</li>
-									<li>MapRedis</li>
-								</ul>
-							</span>
-						</li>
-						<li class="large-skill skill cfade cfade3">
-							Big Data oriented technologies
-							<span class="tooltip">
-								<ul>
-									<li>Google Cloud Platform</li>
-									<li>Amazon Web Services</li>
-									<li>Microsoft Azure</li>
-									<li>Proxmox</li>
-									<li>Hetzner</li>
-									<li>Terraform</li>
-									<li>Kubernetes</li>
-									<li>Docker</li>
-									<li>Apache Spark</li>
-									<li>Hadoop</li>
-									<li>HDFS</li>
-									<li>Azure DevOps Serve</li>
-									<li>Dataiku DSS</li>
-									<li>Jupyter</li>
-									<li>Databricks</li>
-									<li>Amazon SageMaker</li>
-									<li>Microsoft Databricks</li>
-									<li>Talend Open Studio</li>
-								</ul>
-							</span>
-						</li>
-						<li class="large-skill skill cfade cfade4">
-							Other Technologies
-							<span class="tooltip">
-								<ul>
-									<li>Git</li>
-									<li>Github</li>
-									<li>Gitlab</li>
-									<li>Mercurial</li>
-									<li>UNIX/Linux</li>
-									<li>Kali linux</li>
-									<li>Metasploit</li>
-									<li>Windows</li>
-									<li>Maven</li>
-									<li>Power BI</li>
-									<li>Tableau</li>
-									<li>HTML/CSS</li>
-									<li>XML</li>
-									<li>UML</li>
-									<li>Jenkins</li>
-								</ul>
-							</span>
-						</li>
-						<li class="large-skill skill cfade cfade5">
-							Libraries and Frameworks Python
-							<span class="tooltip">
-								<ul>
-									<li>Numpy</li>
-									<li>Pandas</li>
-									<li>PySpark</li>
-									<li>SparkNLP</li>
-									<li>Scikit learn</li>
-									<li>OpenCV</li>
-									<li>OpenAI</li>
-									<li>Keras</li>
-									<li>Tensorflow</li>
-									<li>HugginsFace</li>
-									<li>Matplotlib</li>
-									<li>Flask</li>
-									<li>FastAPI</li>
-									<li>Django</li>
-									<li>Dash</li>
-									<li>Scrappy</li>
-									<li>Selenium</li>
-									<li>LibCloud</li>
-									<li>SQLAlchemy</li>
-									<li>Kiwy</li>
-								</ul>
-							</span>
-						</li>
-						<li class="large-skill cfade cfade6" > 
-						</li>
-						
-							
-							<!-- data-toggle="tooltip" data-html="true" data-placement="left" data-original-title="<ul><li>Spring</li><li>Quarkus</li><li>Hibernate</li><li>Mockito</li><li>Vue.js</li><li>Laravel</li><li>Ruby on Rails</li></ul>" -->
-<!-- 							<span class="tooltip">
-								<ul>
-									<li>Spring</li>
-									<li>Quarkus</li>
-									<li>Hibernate</li>
-									<li>Mockito</li>
-									<li>Vue.js</li>
-									<li>Laravel</li>
-									<li>Ruby on Rails</li>
-								</ul>
-							</span> -->
-					</ul>
+						</div>
+					
+						<!-- Tab panels -->
+						<div class="mx-auto">
+							<div class="relative flex justify-center">
+								<article id="tabpanel-9"
+									class="w-50 rounded-2xl shadow-xl align bg-[#123239]"
+									role="tabpanel" tabindex="0" aria-labelledby="tab-9" x-show="activeTab === 9"
+									x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+									x-transition:enter-start="opacity-0 -translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
+									x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+									x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-12">
+									<div class="min-[300px] p-3 justify-center text-white">
+										<h3 class="font-medium text-xl font-bold pb-1">
+											Programming Languagues
+										</h3>
+										<ul>
+											<li>Python (Expert)</li>
+											<li>C (Expert)</li>
+											<li>C++</li>
+											<li>C#</li>
+											<li>Java</li>
+											<li>JavaScript</li>
+											<li>Ruby</li>
+											<li>PHP</li>
+											<li>Bash</li>
+											<li>Groovy</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div id="coursis" class="section-wrap section-coursis">
 		<div class="section">
