@@ -196,7 +196,6 @@ body {
 		left: 50%;
 		margin-left: -50px;
 		border-radius: 50%;
-		// border: 4px solid #000000;
 		overflow: hidden;
 		text-indent: -9999px;
 		background: url(images/avatar.jpg);
@@ -237,8 +236,6 @@ body {
 	}
 }
 
-/*eheader*/
-/*body*/
 .home-bg {
 	position: fixed;
 	top: 0;
@@ -252,7 +249,6 @@ body {
 	}
 }
 
-/* Loading Circle */
 .loading {
 	margin: auto;
 	position: fixed;
@@ -268,10 +264,10 @@ body {
 .loading-circle {
 	background-color: rgba(0, 0, 0, 0);
 	opacity: .9;
-	border-top: $loading-border-width solid $bd-green;
-	border-right: $loading-border-width solid $bd-orange;
-	border-bottom: $loading-border-width solid $bd-blue;
-	border-left: $loading-border-width solid $bd-red;
+	border-top: $loading-border-width solid $bd-work;
+	border-right: $loading-border-width solid $bd-projects;
+	border-bottom: $loading-border-width solid $bd-skill;
+	border-left: $loading-border-width solid $bd-coursis;
 	border-radius: 50%;
 	width: $loading-width;
 	height: $loading-height;
@@ -517,7 +513,7 @@ body {
 }
 
 .skill-content {
-	margin-top: 200px !important;
+	margin-top: 150px !important;
 	padding-right: 0;
 
 	h1 {
