@@ -56,11 +56,11 @@
     border-radius: inherit;
     background-color: #16ab66;
 
-    -webkit-animation: move 2s linear .1s normal none 1;
-    -moz-animation: move 2s linear .1s normal none 1;
-    -ms-animation: move 2s linear .1s normal none 1;
-    -o-animation: move 2s linear .1s normal none 1;
-    animation: move 2s linear .1s normal none 1;
+    -webkit-animation: move 1s linear .1s normal none 1;
+    -moz-animation: move 1s linear .1s normal none 1;
+    -ms-animation: move 1s linear .1s normal none 1;
+    -o-animation: move 1s linear .1s normal none 1;
+    animation: move 1s linear .1s normal none 1;
 }
 
 @-webkit-keyframes move {
@@ -103,11 +103,11 @@
     display: block;
     padding: 8px 10px;
     text-align: right;
-    -webkit-animation: opacity 2.5s linear .1s normal none 1;
-    -moz-animation: opacity 2.5s linear .1s normal none 1;
-    -ms-animation: opacity 2.5s linear .1s normal none 1;
-    -o-animation: opacity 2.5s linear .1s normal none 1;
-    animation: opacity 2.5s linear .1s normal none 1;
+    -webkit-animation: opacity 1.25s linear .1s normal none 1;
+    -moz-animation: opacity 1.25s linear .1s normal none 1;
+    -ms-animation: opacity 1.25s linear .1s normal none 1;
+    -o-animation: opacity 1.25s linear .1s normal none 1;
+    animation: opacity 1.25s linear .1s normal none 1;
 }
 
 @-webkit-keyframes opacity {

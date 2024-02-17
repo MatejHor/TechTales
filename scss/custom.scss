@@ -204,9 +204,9 @@ body {
 		padding: 0 !important;
 		top: 30px;
 
-		&:hover {
-			border-bottom: 4px solid #fff;
-		}
+		// &:hover {
+		// 	border-bottom: 4px solid #fff;
+		// }
 	}
 
 }
@@ -442,7 +442,7 @@ body {
 		position: relative;
 		width: 300px;
 		margin-left: 30px;
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 		float: left;
 		overflow: hidden;
 
@@ -453,6 +453,7 @@ body {
 			-o-transform: scale(1);
 			transform: scale(1);
 			@include transition(all, .2s, ease-in);
+			// margin-bottom: 5px;
 		}
 
 		&.first {
@@ -475,7 +476,7 @@ body {
 
 		.work-info {
 			position: absolute;
-			top: 137px;
+			top: 133px;
 			padding: 10px;
 			left: 0;
 			right: 0;
@@ -653,8 +654,8 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	// pointer-events: none;
+	// transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .section-projects {
