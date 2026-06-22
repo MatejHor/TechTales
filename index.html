@@ -59,9 +59,11 @@
 		<div class="section">
 			<div class="section-content">
 				<h1 class="cfade cfade1">Matej Horniak</h1>
-				<p class="cfade cfade2">Data Mesh Engineer | Licenced UAV Pilot | Artful Combat Explorer | Programmer by
-					profession | Versatile Fit
-					Adventurer | Whiskey Dandy | Geek Realm Gamer | Nature Hunter</p>
+				<p class="cfade cfade2">Data Mesh Engineer | Programmer by Profession | Cloud &amp; Data Platform
+					Builder |
+					Licenced UAV Pilot | Diving Enthusiast | Tactical Shooting Explorer | Outdoor &amp; Fitness
+					Adventurer |
+					Whiskey Experience Taster | Nature Hunter</p>
 			</div>
 			<a href="#" class="scroll-tip cfade cfade6">Scroll down</a>
 		</div>
@@ -71,48 +73,20 @@
 			<div class="about-content section-content clearfix">
 				<h1>About me</h1>
 				<p class="cfade cfade1">My background starts at the Faculty of Informatics and Information Technology
-					at Slovak Technical
-					University. where I successfully completed my bachelor's degree. My thesis focused on the
-					application of
-					deep learning in the medical domain. During my time at this institution, I touch almost every
-					aspect of
-					computer science and gained proficiency in diverse programming paradigms. The curriculum
-					include a
-					comprehensive range, from understanding the logic of single and multiple register CPU, low-level
-					programming languages such as C, networking, Unix kernel utilization, bash scripting, and
-					database
-					systems, to
-					fundamental principles in artificial Intelligence, web technologies, higher-level programming
-					languages,
-					and User Experience (UX) design.</p>
-				<p class="cfade cfade2">After that, I directed my focus towards Artificial intelligence, where I studied
-					the field of
-					Artificial
-					intelligence and processing of Big Data at Masaryk University in Brno. Here my master's thesis
-					was
-					oriented around the broader applications of Artificial intelligence in the real world within IT
-					companies. This
-					academic phase provided an extensive exploration of AI covering areas such as state space
-					search,
-					genetic algorithms, outlier detection, Natural Language Processing (NLP), deep learning,
-					information
-					retrieval,
-					machine learning, among others. The curriculum also extended beyond AI, incorporating database
-					systems,
-					encompassing both relational databases (with a focus on optimization and efficiency) and NoSQL
-					databases
-					like Redis, Mongo, Elastic, etc... Here I gained insights what are the main duties of
-					data-oriented
-					roles understanding data warehouses, cloud computing and the architecture of supercomputers.</p>
+					at Slovak Technical University, where I completed my bachelor's degree. During my studies, I gained
+					experience across many areas of computer science, including low-level programming, networking, Unix
+					systems, databases, artificial intelligence, web technologies, and software development.</p>
 
-				<p class="cfade cfade3">Towards my academic pursuits, I searched for practical experience in the
-					professional world. This
-					led me
-					to have part-time jobs where I took on roles such as a software engineer, AI developer, ETL
-					pipeline
-					specialist, and Data engineer. These experiences have been instrumental in reinforcing and
-					applying the
-					theoretical knowledge acquired during my academic journey.</p>
+				<p class="cfade cfade2">After that, I focused more deeply on Artificial Intelligence and Big Data at
+					Masaryk University in Brno. This academic phase gave me a stronger understanding of machine
+					learning, natural language processing, information retrieval, data processing, relational and NoSQL
+					databases, cloud computing, and data-oriented architectures.</p>
+
+				<p class="cfade cfade3">Professionally, my focus has gradually shifted from software and data
+					engineering toward cloud platforms, data mesh architecture, infrastructure automation, and practical
+					platform ownership. In recent years, I have been working mainly with GCP, Azure Databricks,
+					Terraform, GitLab CI/CD, data pipelines, configuration-driven data platforms, and cloud
+					infrastructure patterns supporting data engineering and analytics teams.</p>
 
 				<!-- <div class="right">
 					<img class="my-photo cfade cfade4" src="images/me.jpg" alt="" width="335" height="540">
@@ -415,7 +389,7 @@
 			<div class="projects-content clearfix section-content">
 				<h1>Most interesting projects</h1>
 				<!-- Tabs component -->
-				<div x-data="{ activeTab: 1 }">
+				<div x-data="{ activeTab: 10 }">
 					<!-- Buttons -->
 					<div class="flex justify-center">
 						<div role="tablist"
@@ -423,6 +397,45 @@
 							@keydown.right.prevent.stop="$focus.wrap().next()"
 							@keydown.left.prevent.stop="$focus.wrap().prev()"
 							@keydown.home.prevent.stop="$focus.first()" @keydown.end.prevent.stop="$focus.last()">
+							<button id="project-tab-10"
+								class="cfade cfade1 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+								:class="activeTab === 10 ? 'bg-white text-black' : 'text-white'"
+								:tabindex="activeTab === 10 ? 0 : -1" :aria-selected="activeTab === 10"
+								aria-controls="project-tabpanel-10" @click="activeTab = 10" @focus="activeTab = 10">
+								GCP Data Mesh Infrastructure
+							</button>
+
+							<button id="project-tab-11"
+								class="cfade cfade2 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+								:class="activeTab === 11 ? 'bg-white text-black' : 'text-white'"
+								:tabindex="activeTab === 11 ? 0 : -1" :aria-selected="activeTab === 11"
+								aria-controls="project-tabpanel-11" @click="activeTab = 11" @focus="activeTab = 11">
+								CDB Refactor &amp; Databricks Bundle
+							</button>
+
+							<button id="project-tab-12"
+								class="cfade cfade3 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+								:class="activeTab === 12 ? 'bg-white text-black' : 'text-white'"
+								:tabindex="activeTab === 12 ? 0 : -1" :aria-selected="activeTab === 12"
+								aria-controls="project-tabpanel-12" @click="activeTab = 12" @focus="activeTab = 12">
+								AWS POC
+							</button>
+
+							<button id="project-tab-13"
+								class="cfade cfade4 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+								:class="activeTab === 13 ? 'bg-white text-black' : 'text-white'"
+								:tabindex="activeTab === 13 ? 0 : -1" :aria-selected="activeTab === 13"
+								aria-controls="project-tabpanel-13" @click="activeTab = 13" @focus="activeTab = 13">
+								Propagation Flows
+							</button>
+
+							<button id="project-tab-14"
+								class="cfade cfade5 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
+								:class="activeTab === 14 ? 'bg-white text-black' : 'text-white'"
+								:tabindex="activeTab === 14 ? 0 : -1" :aria-selected="activeTab === 14"
+								aria-controls="project-tabpanel-14" @click="activeTab = 14" @focus="activeTab = 14">
+								dFlexNR C# Customs Modules
+							</button>
 							<button id="tab-1"
 								class="cfade cfade1 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
 								:class="activeTab === 1 ? 'bg-white text-black' : 'text-white'"
@@ -492,6 +505,122 @@
 					<!-- Tab panels -->
 					<div class="max-w-[640px] mx-auto">
 						<div class="relative flex flex-col cfade cfade1">
+							<article id="project-tabpanel-10"
+								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+								role="tabpanel" tabindex="0" aria-labelledby="project-tab-10" x-show="activeTab === 10"
+								x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+								x-transition:enter-start="opacity-0 -translate-y-8"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-12">
+								<div class="min-[480px] flex flex-col justify-center p-5 pl-3 text-black">
+									<h3 class="font-medium text-xl font-bold">GCP Data Mesh Infrastructure</h3>
+									<p>
+										Repository-driven infrastructure work for a GCP Data Mesh environment. The work
+										focuses on
+										Terraform-based provisioning, GitLab CI/CD automation, storage setup, IAM,
+										service accounts,
+										custom encryption requirements, environment configuration, and governance
+										patterns for cloud
+										data platforms.
+									</p>
+								</div>
+							</article>
+
+							<article id="project-tabpanel-11"
+								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+								role="tabpanel" tabindex="0" aria-labelledby="project-tab-11" x-show="activeTab === 11"
+								x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+								x-transition:enter-start="opacity-0 -translate-y-8"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-12">
+								<div class="min-[480px] flex flex-col justify-center p-5 pl-3 text-black">
+									<h3 class="font-medium text-xl font-bold">CDB Refactor &amp; Databricks Bundle</h3>
+									<p>
+										Refactoring of configuration database logic from SQL-based configuration into a
+										Delta and
+										YAML-driven solution within the Azure Databricks environment. The implementation
+										was delivered
+										through Databricks Asset Bundles rather than as a separate standalone
+										repository. The work
+										included configuration validation, Spark-based synchronization, Delta history
+										monitoring,
+										notification logic, environment-specific deployment, and CI/CD integration.
+									</p>
+								</div>
+							</article>
+
+							<article id="project-tabpanel-12"
+								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+								role="tabpanel" tabindex="0" aria-labelledby="project-tab-12" x-show="activeTab === 12"
+								x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+								x-transition:enter-start="opacity-0 -translate-y-8"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-12">
+								<div class="min-[480px] flex flex-col justify-center p-5 pl-3 text-black">
+									<h3 class="font-medium text-xl font-bold">AWS POC</h3>
+									<p>
+										Proof of concept work focused on validating AWS-based cloud patterns and
+										infrastructure
+										approaches. The goal was to explore practical cloud setup, service integration,
+										infrastructure
+										automation, and deployment options that could support future data or application
+										workloads in
+										a cloud environment.
+									</p>
+								</div>
+							</article>
+
+							<article id="project-tabpanel-13"
+								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+								role="tabpanel" tabindex="0" aria-labelledby="project-tab-13" x-show="activeTab === 13"
+								x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+								x-transition:enter-start="opacity-0 -translate-y-8"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-12">
+								<div class="min-[480px] flex flex-col justify-center p-5 pl-3 text-black">
+									<h3 class="font-medium text-xl font-bold">Propagation Flows</h3>
+									<p>
+										Databricks-based propagation logic for moving prepared production data into
+										lower environments.
+										The work supports overwrite, append, and incremental scenarios,
+										environment-aware
+										configuration, Delta tables, wait-for-table orchestration, and safer reuse of
+										already loaded
+										data without unnecessary repeated source pulls.
+									</p>
+								</div>
+							</article>
+
+							<article id="project-tabpanel-14"
+								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
+								role="tabpanel" tabindex="0" aria-labelledby="project-tab-14" x-show="activeTab === 14"
+								x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+								x-transition:enter-start="opacity-0 -translate-y-8"
+								x-transition:enter-end="opacity-100 translate-y-0"
+								x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+								x-transition:leave-start="opacity-100 translate-y-0"
+								x-transition:leave-end="opacity-0 translate-y-12">
+								<div class="min-[480px] flex flex-col justify-center p-5 pl-3 text-black">
+									<h3 class="font-medium text-xl font-bold">dFlexNR C# Customs Modules</h3>
+									<p>
+										C# enterprise application work on the dFlexNR system, focused on extending an
+										existing
+										solution and its modules with new functionality for new customs procedures. The
+										goal was to
+										add new modules into the existing application structure and implement business
+										rules for
+										validation and control logic within established workflows.
+									</p>
+								</div>
+							</article>
 							<article id="tabpanel-1"
 								class="w-full bg-white rounded-2xl shadow-xl min-[480px]:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300"
 								role="tabpanel" tabindex="0" aria-labelledby="tab-1" x-show="activeTab === 1"
@@ -793,7 +922,7 @@
 		<div class="section">
 			<div class="skill-content section-content">
 				<div class="left">
-					<h1>My recents skills</h1>
+					<h1>My recent skills</h1>
 					<ul>
 						<li class="skill cfade cfade1">
 							<span class="tooltip">Python</span>
@@ -801,37 +930,37 @@
 								alt="python--v1" />
 						</li>
 						<li class="skill cfade cfade1">
-							<span class="tooltip">Bash</span>
-							<img width="48" height="48" src="https://img.icons8.com/color/48/bash.png" alt="bash" />
-						</li>
-						<li class="skill cfade cfade2">
-							<span class="tooltip">Java</span>
-							<img width="48" height="48"
-								src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png"
-								alt="java-coffee-cup-logo--v1" />
+							<span class="tooltip">C#</span>
+							<img width="48" height="48" src="https://img.icons8.com/color/48/c-sharp-logo.png"
+								alt="c-sharp-logo" />
 						</li>
 						<li class="skill cfade cfade2">
 							<span class="tooltip">SQL</span>
 							<img width="48" height="48" src="https://img.icons8.com/arcade/64/sql.png" alt="sql-logo" />
+						</li>
+						<li class="skill cfade cfade2">
+							<span class="tooltip">Terraform</span>
+							<img width="48" height="48" src="https://img.icons8.com/color/48/terraform.png"
+								alt="terraform" />
 						</li>
 						<li class="skill cfade cfade3">
 							<span class="tooltip">Databricks</span>
 							<img width="48" height="48" src="./images/databricks.png" alt="Databricks" />
 						</li>
 						<li class="skill cfade cfade3">
-							<span class="tooltip">AWS</span>
-							<img width="48" height="48" src="https://img.icons8.com/plasticine/100/amazon.png"
-								alt="amazon" />
-						</li>
-						<li class="skill cfade cfade4">
 							<span class="tooltip">GCP</span>
 							<img width="48" height="48" src="https://img.icons8.com/fluency/48/google-cloud.png"
 								alt="google-cloud" />
 						</li>
 						<li class="skill cfade cfade4">
-							<span class="tooltip">Kali Linux</span>
-							<img width="48" height="48" src="https://img.icons8.com/color/48/kali-linux.png"
-								alt="kali-linux" />
+							<span class="tooltip">Microsoft Azure</span>
+							<img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png"
+								alt="azure" />
+						</li>
+						<li class="skill cfade cfade4">
+							<span class="tooltip">AWS</span>
+							<img width="48" height="48" src="https://img.icons8.com/plasticine/100/amazon.png"
+								alt="amazon" />
 						</li>
 						<li class="skill cfade cfade5">
 							<span class="tooltip">Apache Spark</span>
@@ -854,7 +983,7 @@
 									:class="activeTab === 1 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 1 ? 0 : -1" :aria-selected="activeTab === 1"
 									aria-controls="tabpanel-1" @click="activeTab = 1" @focus="activeTab = 1">
-									Programming Languagues
+									Programming Languages
 								</button>
 								<button id="tab-2"
 									class="cfade cfade2 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
@@ -868,35 +997,35 @@
 									:class="activeTab === 3 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 3 ? 0 : -1" :aria-selected="activeTab === 3"
 									aria-controls="tabpanel-3" @click="activeTab = 3" @focus="activeTab = 3">
-									Big Data oriented technologies
+									Data Platforms
 								</button>
 								<button id="tab-4"
 									class="cfade cfade4 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
 									:class="activeTab === 4 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 4 ? 0 : -1" :aria-selected="activeTab === 4"
 									aria-controls="tabpanel-4" @click="activeTab = 4" @focus="activeTab = 4">
-									Other Technologies
+									Cloud &amp; Infrastructure
 								</button>
 								<button id="tab-5"
 									class="cfade cfade5 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
 									:class="activeTab === 5 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 5 ? 0 : -1" :aria-selected="activeTab === 5"
 									aria-controls="tabpanel-5" @click="activeTab = 5" @focus="activeTab = 5">
-									Data Libraries Python
+									ML/Data Libraries
 								</button>
 								<button id="tab-7"
 									class="cfade cfade6 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
 									:class="activeTab === 7 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 7 ? 0 : -1" :aria-selected="activeTab === 7"
 									aria-controls="tabpanel-7" @click="activeTab = 7" @focus="activeTab = 7">
-									Web Libraries Python
+									Web &amp; Backend
 								</button>
 								<button id="tab-6"
 									class="cfade cfade7 text-sm font-medium h-8 px-4 rounded-2xl whitespace-nowrap focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out"
 									:class="activeTab === 6 ? 'bg-[#123239] text-white' : 'text-white'"
 									:tabindex="activeTab === 6 ? 0 : -1" :aria-selected="activeTab === 6"
 									aria-controls="tabpanel-6" @click="activeTab = 6" @focus="activeTab = 6">
-									Libraries and Frameworks other languages
+									Frameworks
 								</button>
 							</div>
 						</div>
@@ -1050,7 +1179,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Big Data oriented technologies
+											Data Platforms
 										</h3>
 										<ul>
 											<li>
@@ -1198,7 +1327,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Other Technologies
+											Cloud &amp; Infrastructure
 										</h3>
 										<ul>
 											<li>
@@ -1360,7 +1489,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Data Libraries Python
+											ML/Data Libraries
 										</h3>
 										<ul>
 											<li>
@@ -1510,7 +1639,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Libraries and Frameworks other languages
+											Frameworks
 										</h3>
 										<ul>
 											<li>
@@ -1584,7 +1713,8 @@
 														</div>
 													</div>
 												</div>
-											</li><li>
+											</li>
+											<li>
 												<div class="skill_item">
 													<span>Angular</span>
 													<div class="skill_item_colored_main_wrap">
@@ -1621,7 +1751,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Web Libraries Python
+											Web &amp; Backend
 										</h3>
 										<ul>
 											<li>
@@ -1745,7 +1875,7 @@
 									x-transition:leave-end="opacity-0 translate-y-12">
 									<div class="min-[350px] p-3 justify-center text-white">
 										<h3 class="font-medium text-xl font-bold pb-1">
-											Programming Languagues
+											Programming Languages
 										</h3>
 										<ul class="other-skills">
 											<li>
@@ -1886,72 +2016,77 @@
 					<div class="container">
 						<div class="item cfade cfade1">
 							<div class="name">
-								<h5>Generative AI with Large Language Models</h5>
-								<h6>DeepLearning.AI</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade2">
-							<div class="name">
-								<h5>Data Warehousing for Business Intelligence</h5>
-								<h6>University of Colorado</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade3">
-							<div class="name">
-								<h5>Deep Learning Specialization</h5>
-								<h6>DeepLearning.AI</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade4">
-							<div class="name">
-								<h5>EU Drone License A1-A3</h5>
-								<h6>Dutch flight school</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade5">
-							<div class="name">
-								<h5>Spark NLP for Data Scientists</h5>
-								<h6>John Snow Labs</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade6">
-							<div class="name">
-								<h5>Building Systems with the ChatGPT API</h5>
-								<h6>DeepLearning.AI</h6>
-							</div>
-							<span class="material-icons-round">drag_indicator</span>
-						</div>
-						<div class="item cfade cfade7">
-							<div class="name">
-								<h5>Data Engineering on GCP Specialization</h5>
+								<h5>Data Engineering, Big Data, and Machine Learning on GCP</h5>
 								<h6>Google Cloud</h6>
 							</div>
 							<span class="material-icons-round">drag_indicator</span>
 						</div>
-						<div class="item cfade cfade8">
+
+						<div class="item cfade cfade2">
 							<div class="name">
 								<h5>AWS Cloud Technical Essentials</h5>
 								<h6>Amazon Web Services</h6>
 							</div>
 							<span class="material-icons-round">drag_indicator</span>
 						</div>
-						<!-- <div class="item cfade cfade9">
+
+						<div class="item cfade cfade3">
 							<div class="name">
-								<h5>Go </h5>
-								<h6>Amazon Web Services</h6>
+								<h5>Generative AI with Large Language Models</h5>
+								<h6>DeepLearning.AI</h6>
 							</div>
 							<span class="material-icons-round">drag_indicator</span>
-						</div> -->
+						</div>
+
+						<div class="item cfade cfade4">
+							<div class="name">
+								<h5>Optimizing Apache Spark on Databricks</h5>
+								<h6>Databricks</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
+
+						<div class="item cfade cfade5">
+							<div class="name">
+								<h5>Deep Learning Specialization</h5>
+								<h6>DeepLearning.AI</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
+
+						<div class="item cfade cfade6">
+							<div class="name">
+								<h5>Natural Language Processing with Attention Models</h5>
+								<h6>DeepLearning.AI</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
+
+						<div class="item cfade cfade7">
+							<div class="name">
+								<h5>Spark NLP for Data Scientists</h5>
+								<h6>John Snow Labs</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
+
+						<div class="item cfade cfade8">
+							<div class="name">
+								<h5>EU Drone License A1-A3</h5>
+								<h6>Dutch Flight School</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
+
+						<div class="item cfade cfade9">
+							<div class="name">
+								<h5>Building Systems with the ChatGPT API</h5>
+								<h6>DeepLearning.AI</h6>
+							</div>
+							<span class="material-icons-round">drag_indicator</span>
+						</div>
 					</div>
 				</div>
-
-
-
 			</div>
 		</div>
 	</div>

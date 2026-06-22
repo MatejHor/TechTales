@@ -75,3 +75,35 @@
 .item.dragging span {
     color: rgb(214, 104, 103);
 }
+
+/* Courses section - wider cards and more space for the drag icon */
+.section-coursis {
+	.container {
+		width: 760px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.item {
+		width: 100%;
+		padding: 14px 56px 14px 24px; /* viac miesta vpravo */
+		box-sizing: border-box;
+	}
+
+	.item .name {
+		width: 100%;
+		padding-right: 10px;
+		text-align: center;
+	}
+
+	.item .name h5,
+	.item .name h6 {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.item .material-icons-round {
+		right: 18px; /* bodky trochu viac dovnútra */
+	}
+}

@@ -179,3 +179,79 @@
         opacity: 1;
     }
 }
+
+/* =========================================================
+   Skills compact fix only
+   Does not touch nav/header/menu/global layout
+   ========================================================= */
+
+.section-skill {
+	.skill-content {
+		.right {
+			/* nech je pravý panel trochu stabilnejší */
+			.mx-auto {
+				max-width: 430px;
+			}
+
+			/* menšia medzera medzi tabmi a panelom */
+			[role="tablist"] {
+				margin-bottom: 10px !important;
+			}
+
+			/* samotná karta skillov */
+			article {
+				width: 430px !important;
+				max-width: 430px !important;
+			}
+
+			article > div {
+				padding: 18px 22px !important;
+			}
+
+			article h3 {
+				margin-bottom: 14px !important;
+				padding-bottom: 0 !important;
+				font-size: 22px !important;
+				line-height: 1.2 !important;
+			}
+
+			article ul {
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+
+			article li {
+				margin-bottom: 7px !important;
+			}
+
+			.skill_item {
+				height: 31px;
+				display: flex;
+				align-items: center;
+				margin-bottom: 0 !important;
+			}
+
+			.skill_item > span {
+				width: 95px;
+				min-width: 95px;
+				text-align: left;
+				font-size: 14px;
+				white-space: nowrap;
+			}
+
+			.skill_item_colored_main_wrap {
+				width: 235px;
+				height: 31px;
+			}
+
+			.skill_item_colored_wrap {
+				height: 31px;
+			}
+
+			.skill_item_colored {
+				height: 31px;
+				line-height: 31px;
+			}
+		}
+	}
+}
