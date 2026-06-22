@@ -752,10 +752,6 @@ body {
 	color: #fff;
 }
 
-.modal-backdrop {
-	z-index: -1;
-}
-
 .modal-body {
 	text-align: justify;
 
@@ -773,6 +769,7 @@ body {
    Background gets dark, modal stays clear and above backdrop
    ========================================================= */
 
+/* Bootstrap modal backdrop fix */
 .modal-backdrop {
 	background-color: #000 !important;
 	opacity: 0 !important;
@@ -785,6 +782,15 @@ body {
 
 .modal {
 	z-index: 1055 !important;
+}
+
+.modal.show {
+	display: block !important;
+}
+
+.modal-dialog {
+	position: relative !important;
+	z-index: 1060 !important;
 }
 
 .modal-content {
