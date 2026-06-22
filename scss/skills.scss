@@ -255,3 +255,24 @@
 		}
 	}
 }
+
+/* Center percentage text inside skill progress bars */
+.section-skill {
+	.skill-content {
+		.right {
+			.skill_item_colored {
+				display: flex !important;
+				align-items: center !important;
+				justify-content: flex-start !important;
+			}
+
+			.skill_item_colored > span {
+				display: block !important;
+				padding: 0 10px !important;
+				line-height: 31px !important;
+				height: 31px !important;
+				text-align: left !important;
+			}
+		}
+	}
+}
