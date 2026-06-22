@@ -768,3 +768,27 @@ body {
 }
 
 /*efooter*/
+/* =========================================================
+   Bootstrap modal backdrop fix
+   Background gets dark, modal stays clear and above backdrop
+   ========================================================= */
+
+.modal-backdrop {
+	background-color: #000 !important;
+	opacity: 0 !important;
+	z-index: 1040 !important;
+}
+
+.modal-backdrop.show {
+	opacity: 0.65 !important;
+}
+
+.modal {
+	z-index: 1055 !important;
+}
+
+.modal-content {
+	background-color: #fff !important;
+	color: #000 !important;
+	opacity: 1 !important;
+}

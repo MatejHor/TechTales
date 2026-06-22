@@ -137,43 +137,43 @@
 											across multiple
 											environments.</p>
 
-											<p>The platform is managed through several infrastructure repositories
-												responsible for cloud structure,
-												storage provisioning with custom encryption requirements, service
-												accounts, IAM, and deployment
-												automation. A significant part of my work is focused on secure service
-												account handling and
-												integration patterns for internal systems and third-party tools, while
-												respecting organizational
-												restrictions on JSON key creation.</p>
+										<p>The platform is managed through several infrastructure repositories
+											responsible for cloud structure,
+											storage provisioning with custom encryption requirements, service
+											accounts, IAM, and deployment
+											automation. A significant part of my work is focused on secure service
+											account handling and
+											integration patterns for internal systems and third-party tools, while
+											respecting organizational
+											restrictions on JSON key creation.</p>
 
-											<p>I also support dbt infrastructure and deployment processes, including
-												CI/CD automation and
-												environment-specific configuration. In parallel, I work on cloud
-												migration from on-premises platforms
-												to GCP and private cloud environments based on Kubernetes and related
-												platform components.</p>
+										<p>I also support dbt infrastructure and deployment processes, including
+											CI/CD automation and
+											environment-specific configuration. In parallel, I work on cloud
+											migration from on-premises platforms
+											to GCP and private cloud environments based on Kubernetes and related
+											platform components.</p>
 
-											<p>Alongside cloud infrastructure, I develop and maintain Azure Databricks
-												data engineering solutions,
-												including ELT pipelines, Databricks workflows, operational automation,
-												and data platform tooling.
-												I have worked on CDB refactoring from SQL Server to Delta tables,
-												YAML-based configuration,
-												validation models, notification logic, CI/CD deployment, and propagation
-												flows between production
-												and lower environments.</p>
+										<p>Alongside cloud infrastructure, I develop and maintain Azure Databricks
+											data engineering solutions,
+											including ELT pipelines, Databricks workflows, operational automation,
+											and data platform tooling.
+											I have worked on CDB refactoring from SQL Server to Delta tables,
+											YAML-based configuration,
+											validation models, notification logic, CI/CD deployment, and propagation
+											flows between production
+											and lower environments.</p>
 
-											<p>Skills and technologies:</p>
-											<ul>
-												<li>Python, Bash, SQL, C#</li>
-												<li>Terraform, GitLab CI/CD, Infrastructure as Code</li>
-												<li>Spark, PySpark, Delta Lake, Unity Catalog</li>
-												<li>Kubernetes, Docker, Linux</li>
-												<li>Google Cloud Platform, Microsoft Azure, Azure Databricks, Azure Data
-													Factory, Amazon Web Services</li>
-												<li>dbt, Databricks Workflows, Data Engineering Automation</li>
-											</ul>
+										<p>Skills and technologies:</p>
+										<ul>
+											<li>Python, Bash, SQL, C#</li>
+											<li>Terraform, GitLab CI/CD, Infrastructure as Code</li>
+											<li>Spark, PySpark, Delta Lake, Unity Catalog</li>
+											<li>Kubernetes, Docker, Linux</li>
+											<li>Google Cloud Platform, Microsoft Azure, Azure Databricks, Azure Data
+												Factory, Amazon Web Services</li>
+											<li>dbt, Databricks Workflows, Data Engineering Automation</li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -2274,6 +2274,13 @@
 	<div class="state-indicator"></div>
 	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
 	<script src="js/global.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.querySelectorAll(".works-item .modal").forEach(function (modal) {
+				document.body.appendChild(modal);
+			});
+		});
+	</script>
 </body>
 
 </html>
